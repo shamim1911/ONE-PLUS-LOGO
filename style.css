@@ -1,0 +1,299 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+  background-color: #2F2F2F;
+  font-family: 'Lato', sans-serif;
+  height:100%;
+  background: url("https://i.imgur.com/xlk1WfZ.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;   
+}
+
+/*Plus sign*/
+
+
+.plus:before {
+  content: '';
+  position: absolute;
+  border: 12px solid #eb0028;
+  top: 43px;
+  left: 17px;
+  width: 40px;
+  border-bottom: 20px;
+  margin: auto;
+  transition: all 0.3s, border 0.3s 0.1s;
+}
+
+.plus:after {
+  content: '';
+  position: absolute;
+  border: 12px solid #eb0028;
+  top: 18px;
+  left: 43px;
+  height: 40px;
+  border-left: 20px;
+  margin: auto;
+  transition: all 0.3s, border 0.3s 0.1s;
+}
+
+
+/*One Plus Logo Square*/
+
+.one-plus-square{
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 50px auto;
+  background-color: transparent;
+  cursor:crosshair;   
+}
+
+.line1,
+.line2,
+.line3,
+.line4 {
+  position: absolute;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+  -webkit-animation-duration: .4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards; 
+  -moz-animation-duration: .4s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: forwards;
+}
+
+.line1 {
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 12px;
+  -webkit-animation-name: anim-line-1; 
+  -webkit-animation-delay: 0s;  
+  -moz-animation-name: anim-line-1;
+  -moz-animation-delay: 0s;
+}
+.line2 {
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 12px;
+  -webkit-animation-name: anim-line-2;
+  -webkit-animation-delay: .4s;
+  -moz-animation-name: anim-line-2;
+  -moz-animation-delay: 0s;
+}
+.line3 {
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  height: 150px;
+  width: 12px;
+  -webkit-animation-name: anim-line-3;
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: anim-line-3;
+  -moz-animation-delay: 0s;  
+}
+.line4 {
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 12px;
+  -webkit-animation-name: anim-line-4;
+  -webkit-animation-delay: .4s;
+  -moz-animation-name: anim-line-4;
+  -moz-animation-delay: 0s;   
+}
+
+/*One Plus Logo Square Load Animation*/
+
+@-webkit-keyframes anim-line-1 {
+  0% {
+    height: 0px;
+    background: #eb0028;
+    bottom: 50px;
+  }
+  100% {
+    height: 200px;
+    background: #eb0028;
+    bottom: 50px;
+  }
+}
+
+@-moz-keyframes anim-line-1 {
+  from {
+    height: 0px;
+    background: #eb0028;
+    bottom: 50px;
+  }
+  to {
+    height: 200px;
+    background: #eb0028;
+    bottom: 50px;
+  }
+}
+
+
+@-webkit-keyframes anim-line-2 {
+  0% {
+    width: 0;
+    background: #eb0028;
+  }
+  100% {
+    width: 72%;
+    background: #eb0028;
+  }
+}
+
+
+@-moz-keyframes anim-line-2 {
+  from {
+    width: 0;
+    background: #eb0028;
+  }
+  to {
+    width: 72%;
+    background: #eb0028;
+  }
+}
+
+
+
+@-webkit-keyframes anim-line-3 {
+  0% {
+    height: 0;
+    background: #eb0028;
+  }
+  100% {
+    height: 130px;
+    background: #eb0028;
+  }
+}
+
+@-moz-keyframes anim-line-3 {
+  from {
+    height: 0;
+    background: #eb0028;
+  }
+  to {
+    height: 130px;
+    background: #eb0028;
+  }
+}
+
+
+
+@-webkit-keyframes anim-line-4 {
+  0% {
+    width: 0;
+    background: #eb0028;
+  }
+  100% {
+    width: 100%;
+    background: #eb0028;
+  }
+}
+
+@-moz-keyframes anim-line-4 {
+  from {
+    width: 0;
+    background: #eb0028;
+  }
+  to {
+    width: 100%;
+    background: #eb0028;
+  }
+}
+
+/*One Plus Logo - Plus sign*/
+
+.plus {
+  box-sizing: border-box;
+  position: relative;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  top: 107px;
+  left: 95px;
+}
+
+/*Page Fade In Animations*/
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fade-in.first {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.second {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.third {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+
+/*One Plus Logo Number Divisions*/
+
+.number1{
+  position:absolute;
+  left: 49%;
+  top: 212px;
+  margin-left: -12px;
+  display:block;
+}
